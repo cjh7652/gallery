@@ -5,7 +5,7 @@ let $added=0;//처음보이는 것 리스트 항목 모두 로드하면 버튼�
 let $allData=[];
 
 $.getJSON('./data/content.json', function(data){
-
+    initGallery(data);
 });
 function initGallery(data){
     $allData=data;
